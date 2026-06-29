@@ -51,6 +51,7 @@ const Login = () => {
                 />
             </div>
 
+            <Link to='/dashboard'>
             <button 
                 type="submit" 
                 className="w-full bg-[#007a5c] hover:bg-[#6FCF97] text-white py-2 rounded-lg transition
@@ -59,6 +60,7 @@ const Login = () => {
             >
                 Login
             </button>
+            </Link>
 
         </form>
 
