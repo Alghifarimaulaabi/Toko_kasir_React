@@ -2,7 +2,7 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/AppSidebar"
 import Card from "@/components/dashboard/card"
 
-const Dashboard = () => {
+const Product = () => {
     return (
         <div className="bg-slate-950 min-h-screen text-slate-100 font-sans">
             <SidebarProvider>
@@ -10,10 +10,6 @@ const Dashboard = () => {
                 <main className="flex-1 p-8">
                     <SidebarTrigger className="mb-6 text-slate-400 hover:text-slate-100 transition-colors" />
                     
-                    <div className="mb-8">
-                        <h1 className="text-3xl font-bold text-slate-50 tracking-tight">Dashboard Overview</h1>
-                        <p className="text-slate-400 mt-2">Selamat datang kembali, mari cek ringkasan toko hari ini.</p>
-                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <Card text="Total Barang" />
@@ -26,4 +22,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard;
+export default Product;

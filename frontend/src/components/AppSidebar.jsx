@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import {
   Sidebar,
   SidebarContent,
@@ -32,7 +34,9 @@ export function AppSidebar() {
               <SidebarMenuItem>
                 <SidebarMenuButton>
                   <LayoutDashboard />
+                  <Link to="/dashboard">
                   <span>Dashboard</span>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
@@ -46,7 +50,9 @@ export function AppSidebar() {
               <SidebarMenuItem>
                 <SidebarMenuButton>
                   <Package />
-                  <span>Produk</span>
+                  <Link to="/product">
+                    <span>Produk</span>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
 
